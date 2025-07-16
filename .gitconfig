@@ -1,0 +1,17 @@
+[user]
+	name = codebyjonatas
+	email = jonatasousa085@gmail.com
+
+[core]
+  editor = nvim
+
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  lg = log --oneline --graph --decorate --all
+
+[color]
+
+  ui = auto
