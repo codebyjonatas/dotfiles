@@ -101,8 +101,7 @@ keybind = ctrl+shift+9=goto_tab:9
 # ------------------------------------------------------------------------------
 
 # Para adicionar mais transparência altere de 1.0 para 0.8
-background-opacity = 1.0
-
+background-opacity = 0.8
 # Toggle UI elements
 # ------------------------------------------------------------------------------
 # Toggle the tab overview
