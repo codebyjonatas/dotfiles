@@ -3,7 +3,7 @@ return {
   priority = 1000,
   config = function()
     -- Habilita o modo escuro. Mude para "light" para o modo claro.
-    vim.o.background = "light"
+    vim.o.background = "dark"
 
     require("gruvbox").setup({
       terminal_colors = true, -- Adiciona cores ao terminal do Neovim
