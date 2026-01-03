@@ -166,5 +166,7 @@ export EDITOR=nvim
 
 export PATH="/home/jonatas/nclude-dependencies/bin:$PATH"
 
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 eval "$(mise activate zsh)"
-alias fastconf="(cd /home/jonatas/FastCat/FastCat && bash ./fastcat.sh --shell)"
+alias fastconf="(cd /home/jonatas/FastCat && bash ./fastcat.sh --shell)"

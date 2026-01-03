@@ -28,7 +28,7 @@ return {
       -- Você pode sobrescrever highlight groups específicos aqui
       overrides = {},
       dim_inactive = false,
-      transparent_mode = false,
+      transparent_mode = true,
     })
 
     -- Define o colorscheme após a configuração
