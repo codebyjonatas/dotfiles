@@ -28,7 +28,7 @@ return {
       -- Você pode sobrescrever highlight groups específicos aqui
       overrides = {},
       dim_inactive = false,
-      transparent_mode = true,
+      transparent_mode = true, -- Permite que o fundo do Neovim seja transparente
     })
 
     -- Define o colorscheme após a configuração
