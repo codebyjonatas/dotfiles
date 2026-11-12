@@ -1,5 +1,8 @@
 return {
   "ellisonleao/gruvbox.nvim",
+  -- Desativado: o tema ativo agora é o Dracula (lua/plugins/dracula.lua).
+  -- Mude para true para voltar a usar o gruvbox.
+  enabled = false,
   priority = 1000,
   config = function()
     -- Habilita o modo escuro. Mude para "light" para o modo claro.

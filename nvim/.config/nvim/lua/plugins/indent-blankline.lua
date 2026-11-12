@@ -17,14 +17,21 @@ return {
       },
     },
     config = function(_, opts)
+      -- Cores do arco-íris das guias de indentação (paleta do Dracula).
+      -- Antes vinham do gruvbox; agora são fixas para não depender do tema.
+      local rainbow = {
+        RainbowRed = "#FF5555",
+        RainbowYellow = "#F1FA8C",
+        RainbowBlue = "#8BE9FD",
+        RainbowGreen = "#50FA7B",
+        RainbowViolet = "#BD93F9",
+        RainbowCyan = "#A4FFFF",
+      }
+
       local function setup_highlights()
-        local c = require("gruvbox").palette
-        vim.api.nvim_set_hl(0, "RainbowRed", { fg = c.bright_red })
-        vim.api.nvim_set_hl(0, "RainbowYellow", { fg = c.bright_yellow })
-        vim.api.nvim_set_hl(0, "RainbowBlue", { fg = c.bright_blue })
-        vim.api.nvim_set_hl(0, "RainbowGreen", { fg = c.bright_green })
-        vim.api.nvim_set_hl(0, "RainbowViolet", { fg = c.bright_purple })
-        vim.api.nvim_set_hl(0, "RainbowCyan", { fg = c.bright_aqua })
+        for group, color in pairs(rainbow) do
+          vim.api.nvim_set_hl(0, group, { fg = color })
+        end
       end
 
       setup_highlights()
